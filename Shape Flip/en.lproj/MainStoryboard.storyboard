@@ -13,10 +13,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU7-4M-oGq" customClass="ShapeFlipView">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TU7-4M-oGq" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="56" id="0Gk-pg-z6E"/>
                             <constraint firstItem="TU7-4M-oGq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Bl4-xz-cb8"/>
