@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0034531741F54A005C1417 /* Shape Fill Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0034511741F54A005C1417 /* Shape Fill Icon.png */; };
+		AC0034581741F572005C1417 /* Shape Fill Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0034571741F572005C1417 /* Shape Fill Icon@2x.png */; };
 		AC1796A41741B7F30073794B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1796A31741B7F30073794B /* UIKit.framework */; };
 		AC1796A61741B7F30073794B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1796A51741B7F30073794B /* Foundation.framework */; };
 		AC1796A81741B7F30073794B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1796A71741B7F30073794B /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0034511741F54A005C1417 /* Shape Fill Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Shape Fill Icon.png"; path = "Icon/Shape Fill Icon.png"; sourceTree = "<group>"; };
+		AC0034571741F572005C1417 /* Shape Fill Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shape Fill Icon@2x.png"; sourceTree = "<group>"; };
 		AC1796A01741B7F30073794B /* Shape Flip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shape Flip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1796A31741B7F30073794B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC1796A51741B7F30073794B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +63,8 @@
 		AC1796971741B7F30073794B = {
 			isa = PBXGroup;
 			children = (
+				AC0034571741F572005C1417 /* Shape Fill Icon@2x.png */,
+				AC0034511741F54A005C1417 /* Shape Fill Icon.png */,
 				AC1796A91741B7F30073794B /* Shape Flip */,
 				AC1796A21741B7F30073794B /* Frameworks */,
 				AC1796A11741B7F30073794B /* Products */,
@@ -169,6 +175,8 @@
 				AC1796B81741B7F30073794B /* Default@2x.png in Resources */,
 				AC1796BA1741B7F30073794B /* Default-568h@2x.png in Resources */,
 				AC1796BD1741B7F30073794B /* MainStoryboard.storyboard in Resources */,
+				AC0034531741F54A005C1417 /* Shape Fill Icon.png in Resources */,
+				AC0034581741F572005C1417 /* Shape Fill Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +313,7 @@
 				AC1796C51741B7F30073794B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
