@@ -100,10 +100,7 @@
 }
 
 - (void)swipe:(UISwipeGestureRecognizer *)gesture {
-    if (gesture.state == UIGestureRecognizerStateChanged ||
-        gesture.state == UIGestureRecognizerStateEnded) {
-        [self setShowSquare:![self showSquare]];
-    }
+    [self setShowSquare:![self showSquare]];
 }
 
 // ---------- Getters and Setters ---------- //
