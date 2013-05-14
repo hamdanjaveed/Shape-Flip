@@ -18,6 +18,7 @@
 		AC1796BA1741B7F30073794B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1796B91741B7F30073794B /* Default-568h@2x.png */; };
 		AC1796BD1741B7F30073794B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1796BB1741B7F30073794B /* MainStoryboard.storyboard */; };
 		AC1796C01741B7F30073794B /* ShapeFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1796BF1741B7F30073794B /* ShapeFlipViewController.m */; };
+		AC1796C81741C0060073794B /* ShapeFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1796C71741C0060073794B /* ShapeFlipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		AC1796BC1741B7F30073794B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AC1796BE1741B7F30073794B /* ShapeFlipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeFlipViewController.h; sourceTree = "<group>"; };
 		AC1796BF1741B7F30073794B /* ShapeFlipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeFlipViewController.m; sourceTree = "<group>"; };
+		AC1796C61741C0060073794B /* ShapeFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFlipView.h; sourceTree = "<group>"; };
+		AC1796C71741C0060073794B /* ShapeFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeFlipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				AC1796B21741B7F30073794B /* ShapeFlipAppDelegate.h */,
 				AC1796B31741B7F30073794B /* ShapeFlipAppDelegate.m */,
 				AC1796BB1741B7F30073794B /* MainStoryboard.storyboard */,
+				AC1796C61741C0060073794B /* ShapeFlipView.h */,
+				AC1796C71741C0060073794B /* ShapeFlipView.m */,
 				AC1796BE1741B7F30073794B /* ShapeFlipViewController.h */,
 				AC1796BF1741B7F30073794B /* ShapeFlipViewController.m */,
 				AC1796AA1741B7F30073794B /* Supporting Files */,
@@ -177,6 +182,7 @@
 				AC1796B01741B7F30073794B /* main.m in Sources */,
 				AC1796B41741B7F30073794B /* ShapeFlipAppDelegate.m in Sources */,
 				AC1796C01741B7F30073794B /* ShapeFlipViewController.m in Sources */,
+				AC1796C81741C0060073794B /* ShapeFlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

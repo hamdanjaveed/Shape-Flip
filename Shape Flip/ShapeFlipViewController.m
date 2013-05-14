@@ -7,23 +7,16 @@
 //
 
 #import "ShapeFlipViewController.h"
+#import "ShapeFlipView.h"
 
 @interface ShapeFlipViewController ()
-
+@property (weak, nonatomic) IBOutlet ShapeFlipView *shapeFlipView;
 @end
 
 @implementation ShapeFlipViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setShapeFlipView:(ShapeFlipView *)shapeFlipView {
+    _shapeFlipView = shapeFlipView;
 }
 
 @end
