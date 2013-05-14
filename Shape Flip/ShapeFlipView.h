@@ -10,4 +10,6 @@
 
 @interface ShapeFlipView : UIView
 
+- (void)swipe:(UISwipeGestureRecognizer *)gesture;
+
 @end

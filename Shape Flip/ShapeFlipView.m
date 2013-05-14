@@ -99,4 +99,18 @@
     CGContextRestoreGState(UIGraphicsGetCurrentContext());
 }
 
+- (void)swipe:(UISwipeGestureRecognizer *)gesture {
+    if (gesture.state == UIGestureRecognizerStateChanged ||
+        gesture.state == UIGestureRecognizerStateEnded) {
+        [self setShowSquare:![self showSquare]];
+    }
+}
+
+// ---------- Getters and Setters ---------- //
+
+- (void)setShowSquare:(BOOL)showSquare {
+    _showSquare = showSquare;
+    [self setNeedsDisplay];
+}
+
 @end
