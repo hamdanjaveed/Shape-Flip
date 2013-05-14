@@ -100,7 +100,14 @@
 }
 
 - (void)swipe:(UISwipeGestureRecognizer *)gesture {
-    [self setShowSquare:![self showSquare]];
+    // code that I just do not understand at the moment 0_X
+    [UIView transitionWithView:self
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        [self setShowSquare:![self showSquare]];
+                    }
+                    completion:NULL];
 }
 
 // ---------- Getters and Setters ---------- //
