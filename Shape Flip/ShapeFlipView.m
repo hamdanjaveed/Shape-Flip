@@ -8,6 +8,10 @@
 
 #import "ShapeFlipView.h"
 
+@interface ShapeFlipView()
+@property (nonatomic) BOOL showSquare;
+@end
+
 @implementation ShapeFlipView
 
 #define ROUNDED_RECT_CORNER_RADIUS 20.0
@@ -32,7 +36,9 @@
     [[UIColor orangeColor] setStroke];
     [roundedRect stroke];
     
-    [self drawRoundedSquare];
+    if ([self showSquare]) {
+        [self drawRoundedSquare];
+    }
 }
 
 - (void)drawRoundedSquare {
