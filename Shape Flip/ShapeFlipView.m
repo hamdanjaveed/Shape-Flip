@@ -11,6 +11,7 @@
 @implementation ShapeFlipView
 
 #define ROUNDED_RECT_CORNER_RADIUS 20.0
+#define ROUNDED_RECT_LINE_WIDTH 10.0
 
 #define SQUARE_WIDTH 100.0
 #define SQUARE_HEIGHT 100.0
@@ -25,6 +26,11 @@
     // set fill color to white and fill
     [[UIColor whiteColor] setFill];
     UIRectFill(self.bounds);
+    
+    // draw the border to the rect
+    [roundedRect setLineWidth:ROUNDED_RECT_LINE_WIDTH];
+    [[UIColor orangeColor] setStroke];
+    [roundedRect stroke];
     
     // draw a rounded square
     // create the path
