@@ -99,4 +99,22 @@
     CGContextRestoreGState(UIGraphicsGetCurrentContext());
 }
 
+- (void)swipe:(UISwipeGestureRecognizer *)gesture {
+    // code that I just do not understand at the moment 0_X
+    [UIView transitionWithView:self
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        [self setShowSquare:![self showSquare]];
+                    }
+                    completion:NULL];
+}
+
+// ---------- Getters and Setters ---------- //
+
+- (void)setShowSquare:(BOOL)showSquare {
+    _showSquare = showSquare;
+    [self setNeedsDisplay];
+}
+
 @end
