@@ -15,6 +15,7 @@
 #define SQUARE_WIDTH 100.0
 #define SQUARE_HEIGHT 100.0
 #define SQUARE_LINE_WIDTH 10.0
+#define SQUARE_ALPHA 0.5
 
 - (void)drawRect:(CGRect)rect {
     // create the rounded rect and add a clip
@@ -33,7 +34,8 @@
     // set the stroke and fill
     [[UIColor blackColor] setStroke];
     [roundedSquarePath setLineWidth:SQUARE_LINE_WIDTH];
-    [[UIColor greenColor] setFill];
+    UIColor *fillColor = [[UIColor greenColor] colorWithAlphaComponent:SQUARE_ALPHA];
+    [fillColor setFill];
     
     // draw the square
     [roundedSquarePath stroke];
