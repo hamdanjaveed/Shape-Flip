@@ -7,9 +7,10 @@
 //
 
 #import "ShapeFlipViewController.h"
+#import "ShapeFlipView.h"
 
 @interface ShapeFlipViewController ()
-
+@property (weak, nonatomic) IBOutlet ShapeFlipView *shapeFlipView;
 @end
 
 @implementation ShapeFlipViewController
