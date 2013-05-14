@@ -17,6 +17,9 @@
 
 - (void)setShapeFlipView:(ShapeFlipView *)shapeFlipView {
     _shapeFlipView = shapeFlipView;
+    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self.shapeFlipView action:@selector(swipe:)];
+    [swipeGesture setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.shapeFlipView addGestureRecognizer:swipeGesture];
 }
 
 @end
