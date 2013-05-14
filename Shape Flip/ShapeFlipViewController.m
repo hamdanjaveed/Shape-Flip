@@ -15,4 +15,8 @@
 
 @implementation ShapeFlipViewController
 
+- (void)setShapeFlipView:(ShapeFlipView *)shapeFlipView {
+    _shapeFlipView = shapeFlipView;
+}
+
 @end
