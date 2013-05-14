@@ -32,6 +32,13 @@
     [[UIColor orangeColor] setStroke];
     [roundedRect stroke];
     
+    [self drawRoundedSquare];
+}
+
+- (void)drawRoundedSquare {
+    // push the current state
+    [self pushState];
+    
     // draw a rounded square
     // create the path
     CGRect roundedSquareRect = CGRectMake(self.bounds.size.width / 2 - SQUARE_WIDTH / 2, self.bounds.size.height / 2 - SQUARE_HEIGHT / 2, SQUARE_WIDTH, SQUARE_HEIGHT);
@@ -46,6 +53,19 @@
     // draw the square
     [roundedSquarePath stroke];
     [roundedSquarePath fill];
+    
+    // restore the state
+    [self popState];
+}
+
+- (void)pushState {
+    // save graphics state
+    CGContextSaveGState(UIGraphicsGetCurrentContext());
+}
+
+- (void)popState {
+    // restore graphics state
+    CGContextRestoreGState(UIGraphicsGetCurrentContext());
 }
 
 @end
